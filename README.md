@@ -81,14 +81,13 @@ This is the implementation for paper: [A Self-adaptively Soft-Recoding Strategy 
 ![image](https://github.com/MLDMXM2017/SA-soft-recoding/blob/main/A1.jpg)
 ![image](https://github.com/MLDMXM2017/SA-soft-recoding/blob/main/A2.jpg)
 
-
+Table A1 shows the prediction of accuracy corresponding to the $F$-score values in Table II of the paper, while Table A2 shows the prediction of accuracy corresponding to the $F$-score values in Table III. It can be seen that in most cases, the SR-based strategy algorithms achieve better performance in these 20 datasets, and the average accuracy of SR-based DRD-ECOC exceeds the comparison algorithms, with 82.90%. 
 
 - **Comparison of Computational Cost**
 
 ![image](https://github.com/MLDMXM2017/SA-soft-recoding/blob/main/A3.jpg)
 
-Table A3 shows the computational time for all the data sets, including training (denoted as Tr) and test (denoted as Te) times, in the experimental environment: Linux Ubuntu-16.04 operating system, Intel(R) Xeon(R) E5-2665 CPU, 120GB memory size. It can be seen that, due to the introduction of the iteratively update process in the soft-recoding phase, our method requires longer time to train compared to those of the HC schemes, but it requires almost the same test time as the original ECOC algorithms. As the system is usually trained offline, the longer training time is generally acceptable as long as it has higher performance along with a similar classification time.
-
+Table A3 shows the computational time for all the data sets, including training (denoted as Tr) and test (denoted as Te) times, in the experimental environment: Linux Ubuntu-16.04 operating system, Intel(R) Xeon(R) E5-2665 CPU, 120GB memory size. It can be seen that, due to the introduction of the iteratively update process in the soft-recoding phase, our method requires longer time to train compared to those of the HC schemes, but it requires almost the same test time as the original ECOC algorithms. As the system is usually trained offline, the longer training time is generally acceptable as long as it has higher performance along with a similar classification time.\
 The numbers of samples and classes are the main factors affecting the computational time of a model. For example, $Led24digit$ has a relatively large number of data samples (1000 samples) and class numbers (10 classes), resulting in a significant increase in time consumption. In addition, the convergence speed is also a key factor affecting the calculation time. With the increase of the iteration numbers, the computational time increases accordingly. A typical example is that although D-ECOC has fewer columns compared to OVA, when applied to the $Gcm$ data set, the average number of epochs for the former is 179.2, while that for the latter is 64. Therefore, the former runs longer than the latter (33.69s versus 16.1s).
 
 - **Analysis of Significant Level in Performance**
