@@ -80,8 +80,6 @@ This is the implementation for paper: [A Self-adaptively Soft-Recoding Strategy 
 
 Table A1 shows the prediction accuracy corresponding to the $F$-score values in Table II of the paper, while Table A2 shows the prediction accuracy corresponding to the $F$-score values in Table III. It can be seen that in most cases, the SR-based strategy algorithms achieve better performance in these 20 datasets. In table A1, compared with the original SRD-ECOC algorithm, the SR-based SRD-ECOC algorithm has the largest improvement in average accuracy, which is 3.53%. This is because SRD-ECOC has the longest ECOC column, generally $15\times{log(Q)}$, and the spatial distribution of the output vectors is more complex. The softened codematrix can more accurately fit the distribution of the output vectors than the hard-coded matrix, so that performance is more likely to be improved. In table A2, SR-based DRD-ECOC  has obvious performance advantages, with the highest accuracy of 82.9%, surpassing VL-ECOC by 18.26%. In particular, SR-based DRD-ECOC surpasses the second MVR-based DRD-ECOC by 3.01%. It means that after self-adaptive global tuning, the SR-based codematrix fits the data better than the MVR-based codemtrix which simply using the output vector center.
 
-and the average accuracy of SR-based DRD-ECOC exceeds the comparison algorithms, with 82.90%. 
-
 ![image](https://github.com/MLDMXM2017/SA-soft-recoding/blob/main/A1.jpg)
 ![image](https://github.com/MLDMXM2017/SA-soft-recoding/blob/main/A2.jpg)
 
