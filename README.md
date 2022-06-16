@@ -84,15 +84,7 @@ This is the implementation for paper: [A Self-adaptively Soft-Recoding Strategy 
    The numbers of samples and classes are the main factors affecting the computational time of a model. For example, $Led24digit$ has a relatively large number of data samples (1000 samples) and class numbers (10 classes), resulting in a significant increase in time consumption. In addition, the convergence speed is also a key factor affecting the calculation time. With the increase of the iteration numbers, the computational time increases accordingly. A typical example is that although D-ECOC has fewer columns compared to OVA, when applied to the $Gcm$ data set, the average number of epochs for the former is 179.2, while that for the latter is 64. Therefore, the former runs longer than the latter (33.69s versus 16.1s).
 - **Analysis of Significant Level in Performance**
 ![image](https://github.com/mldmxm/SA-soft-recoding/blob/main/A4.jpg)
-   The Friedman test and the Nemenyi test are employed to verify whether the self-adaptive algorithm is significantly different from other algorithms. Friedman test is a non-parametric statistical test. It employs performance ranks of all algorithms for tests. Let $k$ and $D$ denote the number of algorithms and the number of data sets, respectively, $r_j^i$ denotes the rank of $j$-th algorithm on the $i$-th data set and $r_j$ represents the average rank on the $j$-th algorithm, as shown in \cref{eq:15}. Then the Friedman statistic for each metric is calculated by \cref{eq:16}. Based on this equation, Iman and Davenport proposed an improved version in \cref{eq:17}.
-\begin{center}
-\vskip -0.2in
-\begin{align}
-\label{eq:15} r_j&=\frac{1}{D}\sum_{i=1}^D r_j^i, j=1,2,\cdots,k\\
-\label{eq:16} \tau_{\chi^2}&=\frac{12D}{k(k+1)}(\sum_{j=1}^k r_j^2 -\frac{k(k+1)^2}{4})\\
-\label{eq:17} \tau_F&=\frac{(D-1)\tau_{\chi^2}}{D(k-1)-\tau_{\chi^2}}
-\end{align}
-\vskip 0.1in
-\end{center}
+   The Friedman test and the Nemenyi test are employed to verify whether the self-adaptive algorithm is significantly different from other algorithms. Friedman test is a non-parametric statistical test. It employs performance ranks of all algorithms for tests. Let $k$ and $D$ denote the number of algorithms and the number of data sets, respectively, $r_j^i$ denotes the rank of $j$-th algorithm on the $i$-th data set and $r_j$ represents the average rank on the $j$-th algorithm, as shown in \cref{eq:15}. Then the Friedman statistic for each metric is calculated by \cref{eq:16}. Based on this equation, Iman and Davenport proposed an improved version in \cref{eq:17}. 
+
 
 
