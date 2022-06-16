@@ -77,20 +77,20 @@ This is the implementation for paper: [A Self-adaptively Soft-Recoding Strategy 
 ## Additional Results
 - **Accuracy Metric Result**
 
-![image](https://github.com/mldmxm/SA-soft-recoding/blob/main/A1.jpg)
-![image](https://github.com/mldmxm/SA-soft-recoding/blob/main/A2.jpg)
+![image](https://github.com/MLDMXM2017/SA-soft-recoding/blob/main/A1.jpg)
+![image](https://github.com/MLDMXM2017/SA-soft-recoding/blob/main/A2.jpg)
 
 - **Comparison of Computational Cost**
 
-![image](https://github.com/mldmxm/SA-soft-recoding/blob/main/A3.jpg)
+![image](https://github.com/MLDMXM2017/SA-soft-recoding/blob/main/A3.jpg)
    Table A3 shows the computational time for all the data sets, including training (denoted as Tr) and test (denoted as Te) times, in the experimental environment: Linux Ubuntu-16.04 operating system, Intel(R) Xeon(R) E5-2665 CPU, 120GB memory size. It can be seen that, due to the introduction of the iteratively update process in the soft-recoding phase, our method requires longer time to train compared to those of the HC schemes, but it requires almost the same test time as the original ECOC algorithms. As the system is usually trained offline, the longer training time is generally acceptable as long as it has higher performance along with a similar classification time.
    The numbers of samples and classes are the main factors affecting the computational time of a model. For example, $Led24digit$ has a relatively large number of data samples (1000 samples) and class numbers (10 classes), resulting in a significant increase in time consumption. In addition, the convergence speed is also a key factor affecting the calculation time. With the increase of the iteration numbers, the computational time increases accordingly. A typical example is that although D-ECOC has fewer columns compared to OVA, when applied to the $Gcm$ data set, the average number of epochs for the former is 179.2, while that for the latter is 64. Therefore, the former runs longer than the latter (33.69s versus 16.1s).
 
 - **Analysis of Significant Level in Performance**
 
-![image](https://github.com/mldmxm/SA-soft-recoding/blob/main/A4.jpg)
+![image](https://github.com/MLDMXM2017/SA-soft-recoding/blob/main/A4.jpg)
    The Friedman test and the Nemenyi test are employed to verify whether the self-adaptive algorithm is significantly different from other algorithms. Friedman test is a non-parametric statistical test. It employs performance ranks of all algorithms for tests. Let $k$ and $D$ denote the number of algorithms and the number of data sets, respectively, $r_j^i$ denotes the rank of $j$-th algorithm on the $i$-th data set and $r_j$ represents the average rank on the $j$-th algorithm, as shown in \cref{eq:15}. Then the Friedman statistic for each metric is calculated by \cref{eq:16}. Based on this equation, Iman and Davenport proposed an improved version in \cref{eq:17}. 
-
-
+![image](https://github.com/MLDMXM2017/SA-soft-recoding/blob/main/A5.jpg)
+![image](https://github.com/MLDMXM2017/SA-soft-recoding/blob/main/A6.jpg)
 
 
