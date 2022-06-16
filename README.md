@@ -75,6 +75,6 @@ This is the implementation for paper: [A Self-adaptively Soft-Recoding Strategy 
   ```
 
 ## Additional Results
-
-
+![image](https://github.com/mldmxm/SA-soft-recoding/blob/main/A1.jpg)
+![image](https://github.com/mldmxm/SA-soft-recoding/blob/main/A2.jpg)
 
